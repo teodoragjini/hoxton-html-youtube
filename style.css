@@ -132,7 +132,7 @@ header{
 
 
 main {
- background-color: rgb(4, 0, 255);
+ background-color:#f9f9f9;
  grid-area: main;
 
 }
@@ -151,6 +151,52 @@ main {
 }
 
 .video-item{
-   background-color: brown;
+   background-color:white;
    height: 200px;
+   display: grid;
+   grid-template-rows: 2fr 1fr;
+   height: 300px;
+   transition: all 0.5s;
 }
+
+.video-item:hover{
+    transform: scale(1.10);
+}
+
+.video-item-thumbnail-container{
+    overflow-y: hidden;
+}
+.video-item-thumbnail{
+    height: 100%;
+    width: 100%;
+    background:url(karol.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-item-text-container{
+    display: grid;
+    grid-template-columns: 50px 1fr 25px;
+    margin-top: 10px;
+
+}
+
+.video-item-text-container__logo > img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.video-item-text-container__title{
+    display: grid;
+    font-size: 15px;
+
+}
+
+.video-item-text-container__title > a {
+    text-decoration: none;
+    color: #b6b6b6;
+    align-items: center;
+    font-size: 13px;
+    padding: 3px;
+}
+
