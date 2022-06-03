@@ -177,7 +177,7 @@ background-color: #dad6d6;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5px;
-    padding: 5px;
+    padding: 15px;
 
 }
 
