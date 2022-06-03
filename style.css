@@ -1,0 +1,156 @@
+*{
+margin:0px ;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body {
+  display: grid;
+   min-height: 100vh; 
+    grid-template:
+    "header header" 60px
+    "left-menu main" 1fr /
+    250px 1fr;
+}
+
+header{
+  background-color:white;
+  grid-area: header;
+  display: grid;
+  grid-template-columns:auto 1fr auto;
+  gap: 3rem;
+  padding: 0.5rem 1rem;
+  
+}
+
+.header-left{
+    align-items: center;
+    grid-auto-flow: column;
+    display: grid;
+    gap: 1rem;
+}
+
+.header-item{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.header-search-bar{
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+
+}
+.header-search-icon{
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+}
+
+.mic{
+    justify-content: left;
+}
+
+.header-right{
+    grid-auto-flow: column;
+    align-items: center;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.sign-in{
+  border: 1px solid rgb(15, 42, 123);
+  border-radius: 5px;
+  padding: 2px 5px;
+
+}
+
+.sign-in .container{
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.sign-in .name{
+    font-size: 0.8rem;
+}
+
+.name{
+    color: blue;
+}
+
+.left-menu{
+ background-color:white;
+ grid-area:left-menu;
+ display: grid;
+}
+
+.left-menu-nav{
+    padding: 00.5rem 0rem;
+}
+
+.left-menu-items{
+    list-style: none;
+    padding-right: 1rem;
+    display: grid;
+    gap: 0.2rem;
+
+}
+.left-menu-item-link{
+    text-decoration: initial;
+    color: #0a0707;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0.3rem 1rem;
+}
+
+.left-menu-item-link.home{
+    border: 1px solid grey;
+    background-color: rgb(193, 190, 190);
+    color: black;
+}
+
+.p{
+    text-decoration: none;
+    justify-content: center;
+    padding: 0rem 1rem;
+    
+}
+
+.bsy{
+
+    color:grey ;
+    padding: 0.5rem 1rem;
+}
+
+
+
+main {
+ background-color: rgb(4, 0, 255);
+ grid-area: main;
+
+}
+
+
+.top-main{
+    background-color: aqua;
+    height: 100px;
+}
+
+.videos-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.video-item{
+   background-color: brown;
+   height: 200px;
+}
